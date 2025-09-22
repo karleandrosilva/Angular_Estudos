@@ -1,1 +1,9 @@
-<p>componente07 works!</p>
+<h1 [ngStyle]="{'color': condicao ? 'green' : 'red'}">Aprendendo a diretive ngStyle</h1>
+
+<!-- Todo aprovado vai aparecer com o texto verde. E os reprovados com o texto vermelho -->
+
+<ul>
+    <li *ngFor="let l of lista" [ngStyle]="{'color': l == 'Aprovado' ? 'green' : 'red'}">
+        {{ l }}
+    </li> 
+</ul>
