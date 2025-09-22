@@ -1,0 +1,10 @@
+<!-- Usar ngSwitch quando houver múltiplas opções de retorno -->
+
+<div [ngSwitch]="linguagem"> <!-- [ngSwitch]="variavel" → referência a variável que será comparada -->
+    <p *ngSwitchCase="'HTML'">Linguagem de marcação</p>
+    <p *ngSwitchCase="'CSS'">Linguagem de estilização</p>
+    <p *ngSwitchCase="'JS'">Linguagem de progamação</p> 
+    <p *ngSwitchDefault>Linguagem não encontrada</p> <!-- Caso não exista nenhuma comparação (correspondência)-->
+</div>
+
+<!-- ngSwitchCase="'valor'" → verifica se a variável é igual a esse valor -->
