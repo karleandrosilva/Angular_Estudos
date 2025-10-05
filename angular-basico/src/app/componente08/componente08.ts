@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class Componente08 {
 
+  // variavel de média
+  media: number = 4;
+
 }
