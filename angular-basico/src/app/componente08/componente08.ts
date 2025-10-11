@@ -11,7 +11,11 @@ export class Componente08 {
   // variavel de média
   media: number = 4;
 
-  /// vetor de nomes
+  // vetor de nomes
   vetorNomes : string[] = ['Karleandro', 'Leonardo', 'Andreia', 'Maria'];
+
+
+  // variavel linguagem
+  linguaguem : string = 'HTML';
 
 }
