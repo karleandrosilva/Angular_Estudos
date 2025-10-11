@@ -11,4 +11,7 @@ export class Componente08 {
   // variavel de média
   media: number = 4;
 
+  /// vetor de nomes
+  vetorNomes : string[] = ['Karleandro', 'Leonardo', 'Andreia', 'Maria'];
+
 }

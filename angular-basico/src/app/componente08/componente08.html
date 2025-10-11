@@ -1,3 +1,5 @@
+ <!-- AULA  15 - CONTROL FLOW (CONDICIONAIS)--> 
+
 <!-- Para usar um control flow usa o @ -->
  @if (media >= 7) {
     <p>Aprovado(a)!</p>
@@ -6,3 +8,12 @@
  } @else {
     <p>Reprovado!</p>
  }
+
+ <!-- AULA  15 - CONTROL FLOW (LAÇO DE REPETIÇÃO)--> 
+  @for (nome of vetorNomes; track $index) {
+
+   <p>{{$index + 1}} - {{nome}}</p>
+
+  } @empty {
+   <p>Não existe nenhum nome registrado!</p>
+  }
