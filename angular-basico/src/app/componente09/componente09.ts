@@ -10,5 +10,6 @@ import { FormsModule } from '@angular/forms';
 export class Componente09 {
 
   nome : string = '';
+  cidade : string = '';
 
 }
