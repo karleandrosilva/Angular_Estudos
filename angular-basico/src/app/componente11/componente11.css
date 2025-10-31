@@ -1,3 +1,7 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 form {
     width: 500px;
     margin: 30px auto;
