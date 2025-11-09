@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-componente11',
@@ -10,12 +10,12 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 export class Componente11 {
 
   // objeto de formulario
-
   formulario = new FormGroup({
+
     // atributos
-    nome : new FormControl(''),
-    idade : new FormControl(null), // tipo numerico
-    cidade : new FormControl('')
+    nome : new FormControl('', [Validators.required, Validators.minLength(3)]),
+    idade : new FormControl(null, [Validators.required, Validators.min(0), Validators.max(120)]), // tipo numerico
+    cidade : new FormControl('', [Validators.required, Validators.minLength(3)])
   });
 
 }
