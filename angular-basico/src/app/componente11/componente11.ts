@@ -14,7 +14,7 @@ export class Componente11 {
 
     // atributos
     nome : new FormControl('', [Validators.required, Validators.minLength(3)]),
-    idade : new FormControl(null, [Validators.required, Validators.min(0), Validators.max(120)]), // tipo numerico
+    idade : new FormControl(null, [Validators.required, Validators.min(1), Validators.max(120)]), // tipo numerico
     cidade : new FormControl('', [Validators.required, Validators.minLength(3)])
   });
 
