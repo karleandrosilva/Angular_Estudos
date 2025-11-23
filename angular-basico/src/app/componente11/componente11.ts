@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Pessoa } from '../modelo/Pessoa';
 
 @Component({
   selector: 'app-componente11',
@@ -20,5 +21,9 @@ export class Componente11 {
 
   // variaveis visibilidade dos botoes
   btnCadastrar : boolean = true;
+
+  // vetor
+  vetor : Pessoa[] = [];
+  
 
 }
