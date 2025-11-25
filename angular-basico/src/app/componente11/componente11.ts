@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Pessoa } from '../modelo/Pessoa';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-componente11',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './componente11.html',
   styleUrl: './componente11.css'
 })
