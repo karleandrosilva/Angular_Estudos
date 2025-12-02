@@ -39,4 +39,10 @@ export class Componente11 {
     // console.table(this.vetor); (SÓ PARA TESTE)
   }
 
+
+  // função de seleção
+  selecao() {
+    
+  }
+
 }
