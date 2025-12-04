@@ -70,7 +70,19 @@ export class Componente11 {
 
     // visibilidade dos botões
     this.btnCadastrar = true; // mostra de volta o botao cadastrar
+  }
 
+  // funcao de remoção
+  remover(){
+
+    // removendo uma pessoa do vetor
+    this.vetor.splice(this.indice, 1); //1info: indice | 2info: quantidade que ira remover
+
+    // limpeza dos inputs
+    this.formulario.reset();
+
+    // visibilidade do botão
+    this.btnCadastrar = true;
   }
   
 }
