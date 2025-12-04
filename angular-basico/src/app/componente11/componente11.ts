@@ -31,7 +31,7 @@ export class Componente11 {
   indice : number = -1; 
 
 
-  // função de cadastro
+  // funcao de cadastro
   cadastrar() {
     // etapa 1 : Cadastro no vetor
     this.vetor.push(this.formulario.value as Pessoa); // cadastrar um novo registro
@@ -83,6 +83,17 @@ export class Componente11 {
 
     // visibilidade do botão
     this.btnCadastrar = true;
+  }
+
+  // funcao de cancelamento
+  cancelar() {
+
+    // limpeza dos inputs
+    this.formulario.reset(); // limpa o que tem no formulario
+
+    // deixar o botao de cadastrar ativado
+    this.btnCadastrar = true;
+
   }
   
 }
