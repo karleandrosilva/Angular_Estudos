@@ -1,1 +1,24 @@
-<p> Meu primeiro componente em funcionamento!</p>
+<!-- INTERPOLAÇÃO DE TEXTO  --> 
+
+<!-- Interpolação com variáveis -->
+<p>{{nome}}</p>
+<p> Olá, {{nome}} !</p> 
+<p>{{'Olá, ' + nome}}</p>
+<p>{{`Olá, ${nome}`}}</p>
+
+
+<!-- Expressões Matemáticas -->
+<p>{{5 + 5}}</p>
+
+
+<!--  Funções/Metódos -->
+<p>{{mensagem()}}</p>
+
+
+<!-- Operador tenário  -->
+{{media >= 7 ? 'Aprovado': 'Reprovado'}}
+
+
+<!-- Objetos -->
+<p>{{pessoa.nome}}</p>
+<p>{{pessoa.idade}}</p>
