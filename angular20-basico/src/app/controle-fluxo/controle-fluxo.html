@@ -1,7 +1,28 @@
+<!-- condicionais -->
+
 @if(media >=7) {
     <p>Aluno aprovado!</p>
 } @else if (media >= 5) {
     <p>Aluno em recuperação!</p>
 } @else {
     <p>Aluno reprovado!</p>
+}
+
+<hr>
+
+<!-- switch case -->
+
+@switch (linguagem) {
+    @case ('HTML') {<p>linguagem de marcação</p>}
+    @case ('CSS') {<p>linguagem de estilização</p>}
+    @case ('JS') {<p>Linguagem de programaçaõ</p>}
+    @default {<p>Linguagem desconhecida</p>}
+}
+
+<hr>
+
+<!-- laço de repetição -->
+
+@for (nome of nomes; track $index) {
+    <p>{{$index+1}} Seja bem vinda, {{nome}}!</p>
 }

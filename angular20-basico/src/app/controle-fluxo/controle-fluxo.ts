@@ -8,8 +8,14 @@ import { Component } from '@angular/core';
 })
 export class ControleFluxo {
  
+  // condicional
   media : number = 5;
 
   // switch case
+  linguagem : string = '';
+
+  // laço de repetição
+
+  nomes : string[] = ['Alice', 'Bianca', 'Ana'];
 
 }
