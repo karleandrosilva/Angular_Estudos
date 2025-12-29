@@ -1,8 +1,9 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-controle-fluxo',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './controle-fluxo.html',
   styleUrl: './controle-fluxo.css',
 })
