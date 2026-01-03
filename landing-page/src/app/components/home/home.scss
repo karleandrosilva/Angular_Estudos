@@ -1,5 +1,13 @@
 @use '../../../styles/color-variable.scss' as colors;
 
+main {
+    
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   margin-top: 20px;
+}
+
 .main-section {
     display: flex;
     justify-content: center;
@@ -27,7 +35,7 @@
     align-items: center;
     justify-content: center;
 
-    gap: 70px;
+    gap: 40px;
 
     .benefit-data {
         border-bottom: 10px solid colors.$primary-color;

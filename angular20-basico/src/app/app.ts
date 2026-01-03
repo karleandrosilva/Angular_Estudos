@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { DiretivaStyle } from './diretiva-style/diretiva-style';
+import { DiretivaClass } from "./diretiva-class/diretiva-class";
 
 @Component({
   selector: 'app-root',
-  imports: [DiretivaStyle],
+  imports: [DiretivaClass],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
