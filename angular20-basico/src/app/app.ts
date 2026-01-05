@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { DiretivaClass } from "./diretiva-class/diretiva-class";
+import { DiretivaCustomizada } from "./diretiva-customizada/diretiva-customizada";
 
 @Component({
   selector: 'app-root',
-  imports: [DiretivaClass],
+  imports: [DiretivaCustomizada],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
