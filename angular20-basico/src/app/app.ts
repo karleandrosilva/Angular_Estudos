@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { DiretivaCustomizada } from "./diretiva-customizada/diretiva-customizada";
+import { FormularioReativo } from "./formulario-reativo/formulario-reativo";
 
 @Component({
   selector: 'app-root',
-  imports: [DiretivaCustomizada],
+  imports: [FormularioReativo],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
