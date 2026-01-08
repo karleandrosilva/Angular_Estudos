@@ -6,3 +6,37 @@
 
 <p>{{pessoa.value.nome}}</p>
 <p>{{pessoa.value.idade}}</p>
+
+<hr>
+
+<!-- VALIDAR O NOME -->
+
+@if(pessoa.get('nome')?.errors?.['required']) { <!-- referencia qual a carcteristica do obj -->
+    <p>O campo NOME deve ser preechido.</p>
+}
+
+@if(pessoa.get('nome')?.errors?.['minlength']) { <!-- referencia qual a carcteristica do obj -->
+    <p>O campo nome deve ter pelo menos três caracteres.</p>
+}
+
+<!-- SE ESTIVER VALIDADO -->
+@if(pessoa.get('nome')?.valid) { 
+    <p>Nome válido.</p>
+}
+
+<hr>
+
+<!-- IDADE -->
+
+@if(pessoa.get('idade')?.errors?.['required']) { <!-- referencia qual a carcteristica do obj -->
+    <p>O campo IDADE deve ser preechido.</p>
+}
+
+@if(pessoa.get('idade')?.errors?.['max']) { 
+    <p>O campo idade deve valor máximo de 120 anos.</p>
+}
+
+<!-- SE ESTIVER VALIDADO -->
+@if(pessoa.get('idade')?.valid) { 
+    <p>Idade válida.</p>
+}

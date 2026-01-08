@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-formulario-reativo',
@@ -12,8 +12,8 @@ export class FormularioReativo {
   // formulário com dados pessoais
   pessoa = new FormGroup({ // objeto de formulário
     // atributos (características) | elemento de formulário
-    nome : new FormControl(),
-    idade : new FormControl()
+    nome : new FormControl('', [Validators.required, Validators.minLength(3)]),
+    idade : new FormControl('', [Validators.required, Validators.max(120)])
   }); 
 
 
