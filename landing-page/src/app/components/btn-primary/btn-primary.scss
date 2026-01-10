@@ -1,0 +1,30 @@
+@use '../../../styles/color-variable.scss' as colors;
+
+.btn {
+    border: none;
+    border-radius: 30px;
+    padding: 20px 40px;
+
+    cursor: pointer;
+
+    &:disabled { // quando estiver disabled
+        opacity: 0.6;
+    }
+
+    &.primary { // quando for primary
+        color: white;
+        background: -webkit-linear-gradient(180deg, colors.$primary-color, colors.$secondary-color);
+
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    &.secondary { // quando for secondary
+        color: colors.$primary-text;
+        background: white;
+
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+}
