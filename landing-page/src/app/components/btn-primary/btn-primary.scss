@@ -7,11 +7,11 @@
 
     cursor: pointer;
 
-    &:disabled { // quando estiver disabled
-        opacity: 0.6;
+    &:disabled { // Quando o botão estiver desativado (disabled)
+        opacity: 0.6; // Diminui a opacidade para dar feedback visual
     }
 
-    &.primary { // quando for primary
+    &.primary { // Estilo aplicado quando a classe "primary" estiver presente
         color: white;
         background: -webkit-linear-gradient(180deg, colors.$primary-color, colors.$secondary-color);
 
