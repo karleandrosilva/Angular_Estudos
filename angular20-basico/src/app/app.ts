@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { FormularioReativo } from "./formulario-reativo/formulario-reativo";
+import { Bootstrap } from "./bootstrap/bootstrap";
 
 @Component({
   selector: 'app-root',
-  imports: [FormularioReativo],
+  imports: [Bootstrap],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
