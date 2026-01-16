@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { Bootstrap } from "./bootstrap/bootstrap";
+import { ProjetoCrud } from './projeto-crud/projeto-crud';
 
 @Component({
   selector: 'app-root',
-  imports: [Bootstrap],
+  imports: [ProjetoCrud],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
