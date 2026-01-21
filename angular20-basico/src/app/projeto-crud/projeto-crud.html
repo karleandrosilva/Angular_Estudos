@@ -1,8 +1,8 @@
-<form action="">
+<form action="" [formGroup]="pessoa">
 
-    <input type="text" placeholder="Nome" class="form-control">
-    <input type="number" placeholder="Idade" class="form-control">
-    <input type="text" placeholder="Cidade" class="form-control">
+    <input type="text" placeholder="Nome" formControlName="nome" class="form-control">
+    <input type="number" placeholder="Idade" formControlName="idade" class="form-control">
+    <input type="text" placeholder="Cidade" formControlName="cidade" class="form-control">
 
     @if(btnCadastrar) {  
         <input type="button" value="Cadastrar" class="btn btn-primary">

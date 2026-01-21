@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-projeto-crud',
-  imports: [],
+  imports: [ReactiveFormsModule],
   templateUrl: './projeto-crud.html',
   styleUrl: './projeto-crud.css',
 })
@@ -10,5 +11,13 @@ export class ProjetoCrud {
 
   // variavel para trabalhar com a visibilidade dos botões
   btnCadastrar : boolean = true; 
+
+  // objeto do tipo FormGroup - REACTIVEFORMSMODULE
+  pessoa = new FormGroup({
+    // os atributos do obejetos
+    nome : new FormControl(''),
+    idade : new FormControl(''),
+    cidade : new FormControl('')
+  })
 
 }
