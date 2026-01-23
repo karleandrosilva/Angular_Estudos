@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-projeto-crud',
@@ -15,9 +15,9 @@ export class ProjetoCrud {
   // objeto do tipo FormGroup - REACTIVEFORMSMODULE
   pessoa = new FormGroup({
     // os atributos do obejetos
-    nome : new FormControl(''),
-    idade : new FormControl(''),
-    cidade : new FormControl('')
+    nome : new FormControl('', [Validators.required]),
+    idade : new FormControl('', [Validators.required]),
+    cidade : new FormControl('', [Validators.required])
   })
 
 }
