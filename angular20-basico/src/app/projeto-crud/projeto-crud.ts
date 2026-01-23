@@ -17,7 +17,7 @@ export class ProjetoCrud {
     // os atributos do obejetos
     nome : new FormControl('', [Validators.required, Validators.minLength(3)]),
     idade : new FormControl('', [Validators.required, Validators.min(0), Validators.max(120)]),
-    cidade : new FormControl('', [Validators.required])
+    cidade : new FormControl('', [Validators.required, Validators.minLength(3)])
   })
 
 }
