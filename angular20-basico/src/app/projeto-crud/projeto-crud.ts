@@ -15,7 +15,7 @@ export class ProjetoCrud {
   // objeto do tipo FormGroup - REACTIVEFORMSMODULE
   pessoa = new FormGroup({
     // os atributos do obejetos
-    nome : new FormControl('', [Validators.required]),
+    nome : new FormControl('', [Validators.required, Validators.minLength(3)]),
     idade : new FormControl('', [Validators.required]),
     cidade : new FormControl('', [Validators.required])
   })
