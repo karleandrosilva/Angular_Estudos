@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Pessoa } from '../modelo/Pessoa';
 
 @Component({
   selector: 'app-projeto-crud',
@@ -19,5 +20,8 @@ export class ProjetoCrud {
     idade : new FormControl('', [Validators.required, Validators.min(0), Validators.max(120)]),
     cidade : new FormControl('', [Validators.required, Validators.minLength(3)])
   })
+
+  // vetor para armazenar pessoas
+  vetor: Pessoa[] = []; // só aceita pessoa e inicializa o vetor vazio
 
 }
