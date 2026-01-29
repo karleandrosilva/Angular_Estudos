@@ -24,4 +24,13 @@ export class ProjetoCrud {
   // vetor para armazenar pessoas
   vetor: Pessoa[] = []; // só aceita pessoa e inicializa o vetor vazio
 
+  // cadastro de pessoas e listagem
+  // método para efetuar o cadastro
+  cadastrar() : void { // não vai ter retorno (por isso void)
+    // etapa 1: pegar o obj Pessoa (form reativo) e add no vetor
+    this.vetor.push(this.pessoa.value as Pessoa); // enviando o obj, informando que o obj possui as carcteriticas (nome, idade...) - referenciando Pessoa
+
+    this.pessoa.reset(); // limpar o formulário reativo
+  }
+
 }

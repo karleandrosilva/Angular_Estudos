@@ -5,7 +5,7 @@
     <input type="text" placeholder="Cidade" formControlName="cidade" class="form-control">
 
     @if(btnCadastrar) {  
-        <input type="button" [disabled]="pessoa.invalid" value="Cadastrar" class="btn btn-primary">
+        <input type="button" (click)="cadastrar()" [disabled]="pessoa.invalid" value="Cadastrar" class="btn btn-primary">
     } @else {
 
         <input type="button" value="Alterar" class="btn btn-primary">
@@ -28,6 +28,17 @@
     </thead> 
         
     <tbody>
+
+        @for (v of vetor; track $index) {
+            <tr>
+                <td>{{v.nome}}</td>
+                <td>{{v.idade}}</td>
+                <td>{{v.cidade}}</td>
+                <td>
+                    <button class="btn btn-primary">Selecionar</button>
+                </td>
+            </tr>
+        }
         
     </tbody>
 

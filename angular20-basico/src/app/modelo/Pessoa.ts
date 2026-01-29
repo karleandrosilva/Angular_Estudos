@@ -2,7 +2,7 @@
 export class Pessoa {
 
     // 3 atributos
-    // o type pede para inicializar as variaveis, então usa a interrogação
+    // o type pede para inicializar as variaveis, então usa a ?
     nome? : string;
     idade? : number;
     cidade? : string;
