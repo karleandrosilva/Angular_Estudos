@@ -24,13 +24,32 @@ export class ProjetoCrud {
   // vetor para armazenar pessoas
   vetor: Pessoa[] = []; // só aceita pessoa e inicializa o vetor vazio
 
+  
   // cadastro de pessoas e listagem
   // método para efetuar o cadastro
   cadastrar() : void { // não vai ter retorno (por isso void)
     // etapa 1: pegar o obj Pessoa (form reativo) e add no vetor
     this.vetor.push(this.pessoa.value as Pessoa); // enviando o obj, informando que o obj possui as carcteriticas (nome, idade...) - referenciando Pessoa
-
+    
     this.pessoa.reset(); // limpar o formulário reativo
+  }
+  
+  // var. para armezenar o indice da pessoa selecionada 
+  indicePessoaSelecionada : number = -1; // -1 = pois não é uma posição valida 
+  
+  // método para selecionar uma pessoa específica
+  selecionar(indice:number) : void {
+
+    // pegar o indice e atribuir ao pessoa selecionada
+    this.indicePessoaSelecionada = indice;
+
+    // exibir cada info da pessoa selecionada no forms
+    this.pessoa.get('nome')?.setValue(this.vetor[indice].nome || '');
+    this.pessoa.get('idade')?.setValue(this.vetor[indice].idade?.toString() || '');
+    this.pessoa.get('cidade')?.setValue(this.vetor[indice].cidade || '');
+    
+    // visibilidade dos botões
+    this.btnCadastrar = false;
   }
 
 }
