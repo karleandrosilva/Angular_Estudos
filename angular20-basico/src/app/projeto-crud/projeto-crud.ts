@@ -52,4 +52,15 @@ export class ProjetoCrud {
     this.btnCadastrar = false;
   }
 
+  // método para cancelar as ações de alteração e remoção
+  cancelar():void {
+
+    // limpar o forms
+    this.pessoa.reset();
+
+    this.indicePessoaSelecionada = -1; // não seleciona nenhuma pessoa
+
+    this.btnCadastrar = true;
+  }
+
 }
