@@ -63,4 +63,14 @@ export class ProjetoCrud {
     this.btnCadastrar = true;
   }
 
+  // método para alterar dados
+  alterar() : void {
+  
+    // substitui a pessoa selecionada no vetor pelos novos dados do formulário.
+    this.vetor[this.indicePessoaSelecionada] = this.pessoa.value as Pessoa; // mesmo sendo de classes diferentes, a estrutura é a mesma
+
+    // limpa o formulario / sai do modo de edição
+    this.cancelar(); // para que linke os campos
+  }
+
 }
