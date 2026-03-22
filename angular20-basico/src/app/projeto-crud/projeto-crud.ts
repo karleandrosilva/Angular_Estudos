@@ -73,4 +73,14 @@ export class ProjetoCrud {
     this.cancelar(); // para que linke os campos
   }
 
+  // método para remover pessoas
+  remover() : void {
+
+    // remove o vetor da pessoa selecionada e quantos registros quer ser apagados (1)
+    this.vetor.splice(this.indicePessoaSelecionada, 1);
+
+    // limpar o formulario, exibir o botão cadastrar e ocultar os demais os botões
+    this.cancelar();
+  }
+
 }
