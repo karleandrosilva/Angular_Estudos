@@ -18,4 +18,7 @@ export interface TodoItem {
 export class App {
   todoList : TodoItem [] = []; // array para ser salvo
   newTask : string = '';
+
+  // funcionalidade de adicionar a task
+  
 }
