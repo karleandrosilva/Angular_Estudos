@@ -32,5 +32,10 @@ export class App {
       this.newTask = '' // para deixar vazio, após pressionar o botão
     }
   }
+
+  // funcionalidade da lista das tarefas, após adicionar uma tak
+
+
+  // compoente do checkbox
   
 }
