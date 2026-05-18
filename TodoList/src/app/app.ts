@@ -37,5 +37,8 @@ export class App {
 
 
   // compoente do checkbox
+  toggleCompleted(index:number) : void {
+    this.todoList[index].completed = !this.todoList[index].completed // logica
+  }
   
 }
