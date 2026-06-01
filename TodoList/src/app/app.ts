@@ -1,6 +1,8 @@
 import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { NgClass } from '@angular/common';
 
 // formatação das tarefas (interface do item)
 export interface TodoItem {
@@ -11,7 +13,7 @@ export interface TodoItem {
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FormsModule],
+  imports: [RouterOutlet, FormsModule, NgClass],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
@@ -35,10 +37,15 @@ export class App {
 
   // funcionalidade da lista das tarefas, após adicionar uma tak
 
-
-  // compoente do checkbox
+  // componente do checkbox (para saber que esta completo)
   toggleCompleted(index:number) : void {
-    this.todoList[index].completed = !this.todoList[index].completed // logica
+    this.todoList[index].completed = !this.todoList[index].completed // logica do completed
+  }
+
+  deleteTask(id:number) : void {
+
+    this.todoList =this.todoList.filter(item => item.id != id)
+    console.log(this.todoList)
   }
   
 }
