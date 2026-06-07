@@ -23,6 +23,7 @@ export class App {
 
   // funcionalidade de adicionar a task
   addTask() : void {
+
     // verificar se para uma pessoa não salva uma task vazia
     if (this.newTask.trim()!== '') { // trim() remove espaços em branco do início e do fim do texto
       const newTodoItem : TodoItem = {
@@ -49,3 +50,5 @@ export class App {
   }
   
 }
+
+//43:48 - para salvar as info 
