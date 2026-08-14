@@ -71,5 +71,3 @@ export class App {
   }
   
 }
-
-//43:48 - para salvar as info 
